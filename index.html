@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crash-Risk Dashboard</title>
+<style>
+ :root{color-scheme:light dark}
+ body{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem;
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+ h1{font-size:1.75rem;margin:0 0 .25rem} h2{font-size:1.1rem;margin:2rem 0 .5rem}
+ .sub{opacity:.7;margin:0 0 2rem} code{font-size:.9em}
+ footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid #8883;opacity:.7;font-size:.9rem}
+</style></head><body>
+<h1>Crash-Risk Dashboard</h1>
+<p class="sub">A personal Google Apps Script that scores equity market risk from public data.</p>
+
+<p>The app monitors publicly available macroeconomic, credit, valuation and market data,
+combines it into a single 1&ndash;10 risk score, and emails a daily summary to its owner.</p>
+
+<h2>What it does</h2>
+<p>Every hour it reads public data &mdash; Federal Reserve Economic Data (FRED), daily ETF
+closes, and a small number of public market indicators &mdash; writes the results into a
+Google Sheet owned by the script&rsquo;s owner, and scores eight risk domains: valuation,
+yield curve, credit, volatility, breadth, macro, liquidity, and the share of S&amp;P 500
+constituents above their 200-day moving average. Once a day it emails a summary to the
+owner.</p>
+
+<h2>Who it is for</h2>
+<p>One person: the owner of the spreadsheet it is bound to. It is not a service, it has no
+other users, no sign-up, and it collects nothing from anyone.</p>
+
+<h2>Privacy</h2>
+<p>See the <a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Not financial advice</h2>
+<p>This is a personal research tool. Its output is a number on a spreadsheet, not a
+recommendation to buy or sell anything.</p>
+
+<footer>Contact: <a href="mailto:julesmulford@gmail.com">julesmulford@gmail.com</a></footer>
+</body></html>
